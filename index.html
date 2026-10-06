@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>MicroLap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <header id="bar">
+            <button id="toggle-btn">☰</button>
+            <div id="logo-container"><img src="assets/logo.webp" alt=""></div>
+            <h1 id="title"></h1>
+            <button id="lang_button"></button>
+        </header>
+
+        <nav id="sidebar">
+            <h3 id="sidebar_h3"></h3>
+            <div id="Img-select"></div>
+        </nav>
+
+        <main>
+            <section id="microscope-area">
+                <div id="frame"><img id="main-img" draggable="false" alt=""></div>
+                <svg id="arrows"></svg>
+                <div id="cell-info-container">
+                    <div id="cell-box1"></div>
+                    <div id="cell-box2"></div>
+                </div>
+                <div id="ins"></div>
+            </section>
+
+            <div id="controls">
+                <div id="zoom-buttons">
+                    <button id="Zoom-X4">X4</button>
+                    <button id="Zoom-X20">X20</button>
+                    <button id="Zoom-X40">X40</button>
+                </div>
+                <button id="Show-info"></button>
+            </div>
+        </main>
+    </div>
+
+    <!-- Optional files. They are created by scan_assets.py / by you and may be missing. -->
+    <script src="assets/slides.js"></script>
+    <script src="assets/slide-info.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
